@@ -1,0 +1,165 @@
+
+.top {
+	width:978px;
+	margin:auto;
+}
+
+.centered-top {
+	width:100%;
+	height:320px;
+	position:absolute;
+	display:table;
+	top:0;
+	left:0;
+}
+
+.top-image {
+	width: 100%;
+  	height: 100%;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	z-index: -1;
+  	background-position: center top;
+  	background: url("http://bigbackground.com/wp-content/uploads/2013/08/nice-pictures-for-desktop.jpg") no-repeat;
+  	background-size: 100% auto;
+  	background-image: url("http://starmon.com/bkimball/IC1396_Hubble.jpg");
+	
+	
+	/*width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-1;
+	background-position:center top;
+	background:url("http://bigbackground.com/wp-content/uploads/2013/08/nice-pictures-for-desktop.jpg") no-repeat;
+	background-size:100% auto;*/
+}
+
+.top-content-background {
+	position: absolute;
+  	top: 0px;
+  	right: 0px;
+  	bottom: 0px;
+  	left: 0px;
+  	z-index: 99;
+  	background-position: center -131px;
+  	background-image: url("http://bigbackground.com/wp-content/uploads/2013/08/nice-pictures-for-desktop.jpg");
+  	background-repeat: no-repeat;
+  	background-size: 1080px auto;
+  	filter: url("http://bigbackground.com/wp-content/uploads/2013/08/nice-pictures-for-desktop.jpg");
+  	background-image: url("http://starmon.com/bkimball/IC1396_Hubble.jpg");
+  	-webkit-filter: blur(10px);
+	
+	
+	/*position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index: 99;
+	background-position: center -70px;
+	background-image:url("http://bigbackground.com/wp-content/uploads/2013/08/nice-pictures-for-desktop.jpg");
+	background-repeat: no-repeat;
+  	background-size: 1080px auto;
+  	-webkit-filter: blur(10px);
+	filter:url("http://bigbackground.com/wp-content/uploads/2013/08/nice-pictures-for-desktop.jpg");*/
+}
+
+.centered-top-table {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.top-box {
+	width:300px;
+	margin:auto;
+	position:relative;
+}
+
+.top-content {
+	width:300px;
+	text-align:center;
+	margin:auto;
+	/*background-color:#1D1D1D;*/
+	background: rgb(34,34,34);
+	background: rgba(34,34,34,0.75);
+	z-index:100;
+	position:relative;
+}
+
+.top-content > * {
+	color:#FFFFFF;
+}
+
+.top-content > h1 {
+	padding:20px 0px 10px 0px;
+	font-family:"Raleway", sans-serif;
+	margin:20px 0px 0px 0px;
+}
+
+.social-content > ul {
+	list-style:none;
+	padding:0px;
+}
+
+.social-content > ul > li {
+	display:inline;
+}
+
+.social-content > ul > li > a, .social-content > ul > li > a:visited, .social-content > ul > li > a:active {
+	color:#FFFFFF;
+	font-size:1.5em;
+}
+
+.social-content > ul > li > a:hover {
+	-webkit-transition: 0.5s linear;
+	transition: 0.5s linear;
+	color:#9AD1FF;
+}
+
+.rest {
+	position:absolute;
+	top:320px;
+	left:0;
+	width:100%;
+}
+
+.about-me {
+	padding:20px 0px 20px 0px;
+	width:978px;
+	margin:auto;
+}
+
+.about-me > p {
+	width:75%;
+	margin:auto;
+}
+
+.content {
+	padding:20px 0px 0px 0px;
+	width:978px;
+	margin:auto;
+}
+
+.content > ul {
+	list-style:none;
+	padding:0px;
+	width:100%;
+	margin:0px;
+}
+
+.content > ul > li {
+	display:inline-block;
+	width:20%;
+	height:150px;
+	background-color:#000000;
+}
+
+.content > ul > li > p {
+	display:block;
+	color:white;
+	width:100%;
+}
