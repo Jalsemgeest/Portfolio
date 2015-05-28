@@ -163,3 +163,66 @@
 	color:white;
 	width:100%;
 }
+
+
+/* Login */
+.login-form {
+	font-family:"Raleway", sans-serif;
+	width:300px;
+	margin:auto;
+}
+
+.login-email, .login-password, .login-button-area {
+	width:100%;
+	padding:10px;
+}
+
+.login-email > label, .login-password > label {
+	width:100px;
+	float:left;
+	height: 23px;
+  	line-height: 23px;
+}
+
+.login-email > input, .login-password > input {
+	width:192px;
+	padding: 2px;
+  	font-size: 0.9em;
+  	line-height: 0.9em;
+  	border-radius: 3px;
+  	box-shadow: none;
+  	border: 1px solid #cccccc;
+}
+
+.login-email > input[type='email']:valid {
+	background-color:#9AD1FF;
+}
+
+.login-password > input[type='password']:valid {
+	background-color:#9AD1FF;
+}
+
+.login-button-area > button {
+	float:left;
+	width:80px;
+	margin-right:20px;
+	border:0;	
+	background-color:#1472B7;
+	color:#FFFFFF;
+	-webkit-transition:0.5s linear;
+	transition:0.5s linear;
+	border-radius:5px;
+	height:22px;
+}
+
+.login-button-area > button:hover {
+	cursor:pointer;
+	background-color:#4795CF;
+}
+
+.login-button-area > input {
+	margin:0;
+}
+
+
+
