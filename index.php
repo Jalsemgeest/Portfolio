@@ -57,11 +57,11 @@
 						</div>
 					</li>
 					<li>
-						<div class="content-piece" onclick="files/JakeAlsemgeestResume.pdf">
-							<div class="overtop"></div>
+						<div class="content-piece">
+							<a class="overtop" href="files/JakeAlsemgeestResume.pdf"></a>
 							<iframe src="files/JakeAlsemgeestResume.pdf" scrolling="no" seamless></iframe>
 							<div class="content-piece-title">
-								<p>Content</p>
+								<p>Jake Alsemgeest Resume</p>
 							</div>
 						</div>
 					</li>
