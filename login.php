@@ -25,18 +25,18 @@
 	</section>
 	<section class="rest">
 		<section class="about-me">
-			<form class="login-form">
+			<form class="login-form" method="post" action="login-exec.php">
 				<div class="login-email">
 					<label for="email">Email:</label>
-					<input type="email" id="email" required/>
+					<input name="email" type="email" id="email" required/>
 				</div>
 				<div class="login-password">
 					<label for="password">Password:</label>
-					<input type="password" id="password" required/>
+					<input name="password" type="password" id="password" required/>
 				</div>
 				<div class="login-button-area">
 					<button type="submit">Login</button>
-					<input id="remember_me" type="checkbox"/>
+					<input name="remember_me" id="remember_me" type="checkbox"/>
 					<label for="remember_me">Remember Me</label>
 				</div>
 			</form>
