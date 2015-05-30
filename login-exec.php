@@ -21,7 +21,9 @@
 	    	// We have successfully found the user.
 	    	while ($obj = mysqli_fetch_assoc($result)) {
 				$_SESSION['SESS_USER_ID'] = $obj['ID'];
-				$_SESSION['SESS_USER_EMAIL'] = $obj['email'];	    		
+				$_SESSION['SESS_USER_EMAIL'] = $obj['email'];	    
+				$_SESSION['SESS_FIRST_NAME'] = $obj['first_name'];
+				$_SESSION['SESS_LAST_NAME'] = $obj['last_name'];		
 	    	}
 	    }
 	}

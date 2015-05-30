@@ -18,7 +18,11 @@
 					<div class="top-box">
 						<div class="top-content-background"></div>
 						<div class="top-content">
-							<h1>Richard Purvis</h1>
+							<?php if (isset($_SESSION['SESS_USER_ID'])): ?>
+								<h1> <?php print $_SESSION['SESS_FIRST_NAME'] . " " . $_SESSION['SESS_LAST_NAME']; ?> </h1>
+							<?php else: ?>
+								<h1>Richard Purvis</h1>
+							<?php endif; ?>
 							<div class="social-content">
 								<ul>
 									<li>
