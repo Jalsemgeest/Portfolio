@@ -112,14 +112,22 @@ body {
 }
 
 .top-content > h1 {
-	padding:20px 0px 10px 0px;
+	padding:20px 0px 20px 0px;
 	font-family:"Raleway", sans-serif;
 	margin:20px 0px 0px 0px;
+}
+
+.social-content {
+  	width: 978px;
+  	margin: auto;
+  	text-align: center;
+  	padding: 10px 0px 0px 0px;
 }
 
 .social-content > ul {
 	list-style:none;
 	padding:0px;
+	margin:10px 0px 0px 0px;
 }
 
 .social-content > ul > li {
@@ -127,7 +135,7 @@ body {
 }
 
 .social-content > ul > li > a, .social-content > ul > li > a:visited, .social-content > ul > li > a:active {
-	color:#FFFFFF;
+	color:#000000;
 	font-size:1.5em;
 }
 
@@ -145,6 +153,7 @@ body {
 	padding:20px 0px 20px 0px;
 	width:978px;
 	margin:auto;
+	position:relative;
 }
 
 .about-me > p {
@@ -153,7 +162,6 @@ body {
 }
 
 .content {
-	padding:20px 0px 0px 0px;
 	width:100%;
 	margin:auto;
 }
