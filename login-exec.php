@@ -15,6 +15,22 @@
 	$password = mysqli_real_escape_string($link, $_POST['password']);
 	$remember = $_POST['remember_me'];
 
-	//echo "<h1>Hi " . $email . " " . $password . "</h1>";
+	/* Create table doesn't return a resultset */
+	if ($result = mysqli_query($link, "SELECT FROM USERS email='$email' AND password='$password';") === TRUE) {
+	    if (mysqli_num_rows($result) > 0) {
+	    	// We have successfully found the user.
+	    	while ($obj = mysqli_fetch_assoc($result)) {
+				$_SESSION['SESS_USER_ID'] = $obj['ID'];
+				$_SESSION['SESS_USER_EMAIL'] = $obj['email'];	    		
+	    	}
+	    }
+	}
+	
+	mysqli_close($link);
+	
+	echo $_SESSION['SESS_USER_ID'] . " " . $_SESSION['email'];
 
+	header("location:index.php");
+	exit();
+	
 ?>
