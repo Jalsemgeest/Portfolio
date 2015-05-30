@@ -23,22 +23,6 @@
 							<?php else: ?>
 								<h1>Richard Purvis</h1>
 							<?php endif; ?>
-							<div class="social-content">
-								<ul>
-									<li>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-github"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-pinterest"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-legal"></i></a>
-									</li>
-								</ul>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -49,6 +33,22 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate mauris ut maximus posuere. Sed posuere purus sed ex malesuada molestie. Vivamus ac lorem id nisi viverra sodales. Sed massa neque, tempor vel nibh sed, venenatis blandit felis. Nam ornare ligula id lobortis cursus. Maecenas pharetra volutpat mi, vel maximus turpis posuere id. Cras commodo porta massa. Ut lobortis lectus sagittis faucibus condimentum. Aliquam eget lacinia risus. Praesent interdum velit vel ullamcorper porttitor posuere.
 				</p>
+				<div class="social-content">
+					<ul>
+						<li>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-github"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-pinterest"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-legal"></i></a>
+						</li>
+					</ul>
+				</div>
 			</section>
 			<section class="content">
 				<ul>
