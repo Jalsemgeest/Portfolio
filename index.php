@@ -24,6 +24,13 @@
 				<div class="top-image"></div>
 				<div class="centered-top-table">
 					<div class="top-box">
+						<div class="top-content-menu">
+							<?php 	if (isset($_SESSION['SESS_USER_ID'])) { ?>
+										<a href="logout.php">Logout</a>
+							<?php	} else { ?>
+										<a href="login.php">Login</a>
+							<?php 	} ?>
+						</div>
 						<div class="top-content-background"></div>
 						<div class="top-content">
 							<?php if (isset($_SESSION['SESS_USER_ID'])): ?>
