@@ -1,4 +1,10 @@
-<?php session_start(); ?>
+<?php session_start(); 
+
+	if (isset($_COOKIE['user']) && !isset($_SESSION['SESS_USER_ID'])) {
+		require_once('scripts/cookie_login.php');
+	}
+
+?>
 
 <!DOCTYPE html>
 

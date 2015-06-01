@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 
+<?php
+	if (isset($_SESSION['SESS_USER_ID']) || isset($_COOKIE['user'])) {
+		header("location:index.php");
+		exit();
+	}
+?>
+
 <html>
 <head>
 	<meta charset="utf-8">
