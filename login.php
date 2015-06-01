@@ -37,7 +37,7 @@
 					</div>
 					<div class="login-button-area">
 						<button type="submit">Login</button>
-						<input name="remember_me" id="remember_me" type="checkbox"/>
+						<input name="remember_me" id="remember_me" type="checkbox" value="remember"/>
 						<label for="remember_me">Remember Me</label>
 					</div>
 				</form>

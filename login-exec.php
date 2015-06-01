@@ -13,7 +13,7 @@
 
 	$email = mysqli_real_escape_string($link, $_POST['email']);
 	$password = mysqli_real_escape_string($link, $_POST['password']);
-	//$remember = $_POST['remember_me'];
+	$remember = isset($_POST['remember_me']);
 
 	if ($result = mysqli_query($link, "SELECT * FROM USERS WHERE email='$email' AND password='$password';")) {
 	    if (mysqli_num_rows($result) > 0) {
@@ -24,6 +24,21 @@
 				$_SESSION['SESS_FIRST_NAME'] = $obj['first_name'];
 				$_SESSION['SESS_LAST_NAME'] = $obj['last_name'];		
 	    	}
+
+		if ($remember == TRUE) {
+			// We are going to create and set a COOKIE KEY.
+			$cookie_password = $_SESSION['SESS_USER_ID'] . " " . $_SESSION['SESS_USER_EMAIL'];
+			$options = ['cost' => 11];
+			$hash = password_hash($cookie_password, PASSWORD_BCRYPT, $options);	
+			
+			$userId = $_SESSION['SESS_USER_ID'];
+
+			$date = date('Y-m-d', strtotime("+30 days"));
+			
+			if (mysqli_query($link, "INSERT INTO COOKIE_KEY VALUES('$userId', '$hash', '$date');") == TRUE) {
+				setcookie("user", $hash, time() + (86400 * 30));
+			}
+		}
 	    }
 	} else {
 		$_SESSION['SESS_LOGIN_FAILED'] = TRUE;
