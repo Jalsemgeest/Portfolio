@@ -1,5 +1,5 @@
 <?php
-
+	
 	session_start();
 
 	require_once('config/config.php');
@@ -13,24 +13,23 @@
 
 	$email = mysqli_real_escape_string($link, $_POST['email']);
 	$password = mysqli_real_escape_string($link, $_POST['password']);
-	$remember = $_POST['remember_me'];
+	//$remember = $_POST['remember_me'];
 
-	/* Create table doesn't return a resultset */
-	if ($result = mysqli_query($link, "SELECT FROM USERS email='$email' AND password='$password';") === TRUE) {
+	if ($result = mysqli_query($link, "SELECT * FROM USERS WHERE email='$email' AND password='$password';")) {
 	    if (mysqli_num_rows($result) > 0) {
 	    	// We have successfully found the user.
-	    	while ($obj = mysqli_fetch_assoc($result)) {
+	    	while ($obj = mysqli_fetch_array($result)) {
 				$_SESSION['SESS_USER_ID'] = $obj['ID'];
 				$_SESSION['SESS_USER_EMAIL'] = $obj['email'];	    
 				$_SESSION['SESS_FIRST_NAME'] = $obj['first_name'];
 				$_SESSION['SESS_LAST_NAME'] = $obj['last_name'];		
 	    	}
 	    }
+	} else {
+		$_SESSION['SESS_LOGIN_FAILED'] = TRUE;
 	}
 	
 	mysqli_close($link);
-	
-	echo $_SESSION['SESS_USER_ID'] . " " . $_SESSION['email'];
 
 	header("location:index.php");
 	exit();
