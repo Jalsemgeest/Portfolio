@@ -15,6 +15,7 @@
 
 		if (mysqli_query($link, "DELETE FROM COOKIE_KEY WHERE ID = '$id' AND COOKIEKEY = '$key';")) {
 			setcookie('user', '', 0, '/');
+			unset($_COOKIE['user']);
 		}
 	}
 

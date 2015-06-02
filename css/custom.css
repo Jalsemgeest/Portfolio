@@ -84,6 +84,27 @@ body {
 	filter:url("http://bigbackground.com/wp-content/uploads/2013/08/nice-pictures-for-desktop.jpg");*/
 }
 
+.top-content-menu {
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.top-content-menu > a {
+	text-decoration:none;
+	color:#FFFFFF;
+	font-family:"Raleway", sans-serif;
+	padding:10px;
+	background-color:rgba(34,34,34,0.75);
+	display:block;
+	border-radius:0px 0px 0px 10px;
+}
+
+.top-content-menu > a:hover, .top-content-menu > a:visited, .top-content-menu > a:active, .top-content-menu > a:focus {
+	background-color:rgba(34,34,34,1);
+}
+
+
 .centered-top-table {
 	display:table-cell;
 	vertical-align:middle;
