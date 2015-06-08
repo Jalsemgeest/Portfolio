@@ -3,6 +3,8 @@
 	if (isset($_COOKIE['user']) && !isset($_SESSION['SESS_USER_ID'])) {
 		require_once('scripts/cookie_login.php');
 	}
+	
+	include_once("scripts/analyticstracking.php");
 
 ?>
 

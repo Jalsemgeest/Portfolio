@@ -2,7 +2,7 @@
 	
 	session_start();
 
-	echo $_SESSION['SESS_USER_ID'];
+	include_once("scripts/analyticstracking.php");
 
 	// Check if a cookie is set.
 	if (isset($_COOKIE['user'])) {

@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 
 <?php
+	session_start();
+	
 	if (isset($_SESSION['SESS_USER_ID']) || isset($_COOKIE['user'])) {
 		header("location:index.php");
 		exit();
 	}
+	
+	include_once("scripts/analyticstracking.php");
+	
 ?>
 
 <html>
